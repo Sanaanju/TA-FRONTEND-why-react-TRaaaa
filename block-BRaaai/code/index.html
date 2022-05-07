@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article-Card</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="root"></div>
+    </main>
+    <script type="text/babel">
+      var root = document.querySelector('.root');
+
+      let img = (
+        <>
+          <div className="article">
+            {' '}
+            <img src="https://images.unsplash.com/photo-1610874933184-7728fd666162?
+            ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+              alt="img"
+            />
+            <div className="text">
+              <h1>City Light in New York</h1>
+              <h2>The city that never sleeps</h2>
+
+              <p>
+                New York , is largest city in the U.S., is an architectural
+                marvel with plenty of historic monuments.
+              </p>
+
+              <h4>
+                o 6 mins ago <span>39 comments</span>
+              </h4>
+            </div>
+          </div>
+        </>
+      );
+
+      ReactDOM.render(img, root);
+    </script>
+  </body>
+</html>
