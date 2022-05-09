@@ -1,0 +1,276 @@
+/* http://meyerweb.com.eric/tools/css/reset/v2.0  | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul{
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* custom styles begins here */
+
+html {
+    font-size: 16px;
+
+}
+body {
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+a {
+    text-decoration: none;
+}
+
+/* flex */
+.flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.flex-20 {
+    flex: 0 1 20%;
+}
+.flex-30 {
+    flex: 0 1 30%;
+}
+.flex-45 {
+    flex: 0 1 45%;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.space-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}
+
+/** headings */
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+h1 {
+    font-size: 2.5rem;
+    color: tomato;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+h4 {
+    font-size: 1.4rem;
+    text-transform: italic;
+    display: inline;
+}
+/* header */
+header {
+    background-color: black;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+.navigation li {
+    margin-left: 5rem;
+}
+.navigation a {
+    color: #fff;
+}
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: green;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #fff;
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+/* hero */
+.hero {
+    font-size: 20rem;
+    font-weight: 700;
+    background-color: grey;
+    text-align: center;
+    text-shadow: 1px 1px 50px green;
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+/* main */
+/* Articles */
+.articles {
+    background-color: yellow;
+
+}
+/* Article */
+.wrapper {
+    padding: 2rem;
+    margin: 2rem;
+    width: 500px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: green;
+}
+.wrapper img {
+    box-shadow: 1px 1px 10px green;
+}
+.wrapper .content {
+    color: grey;
+    border: 1px solid green;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+/* footer */
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 1rem;
+}
+small {
+    font-size: .9rem;
+}
+.social i {
+    margin-left: 2rem;
+    color: green;
+    font-size: 1.5rem;
+}
+
+.social i:hover {
+    color: greenyellow;
+}
